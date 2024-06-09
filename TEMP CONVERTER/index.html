@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-slate-700">
+    <p class="h-16"></p>
+   <div class="bg-sky-600  text-center justify-center h-[350px] w-[32%] m-auto rounded-md ">
+           <p class="pt-3 text-3xl text-fuchsia-900">Temperature Converter</p>
+           <div class="pt-10 ">
+            <input type="text" class="pb-3 h-auto w-[80%] rounded-md text-center text-xl mb-4" id="input" placeholder="Enter Temperature"><br>
+            <label for="" class="text-2xl">From :</label>
+            <select name="i/o" id="from">
+                <option value="C">Celcius</option>
+                <option value="F">Ferhenhite</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <label for="" class="text-2xl">To :</label>
+            <select name="i/o" id="to">
+                
+                <option value="F">Ferhenhite</option>
+                <option value="C">Celcius</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <br>
+            <button type="submit" id="Convert" class="bg-purple-800 mt-5 h-auto w-auto text-neutral-950 p-1 rounded-lg mb-4">Convert</button>
+            <br>
+            <label for="" class="text-3xl  ">Result :</label>
+              <input type="text" id="result" readonly class="rounded-sm h-auto w-auto text-center"> <br>
+              <button type="submit" class="mt-5 bg-orange-500 h-6 w-12 rounded-lg" id="clear">Clear</button>
+           </div>
+   </div>
+</body>
+ <script src="./script.js"></script>
+
+</html>
